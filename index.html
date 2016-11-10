@@ -1,99 +1,563 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
     <head>
-        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
         <meta charset="utf-8">
-        <title>Facturación libre</title>
-        <meta name="generator" content="Bootply" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
-        <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>LibreDTE ¡Facturación electrónica libre para Chile!</title>
+        <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+        <link rel="stylesheet" media="screen" href="assets/fonts/font-awesome/font-awesome.min.css" />
+        <link rel="stylesheet" type="text/css" href="assets/extras/animate.css">
+        <link rel="stylesheet" type="text/css" href="assets/extras/lightbox.css">
+        <script src="assets/js/jquery-min.js"></script>
         <!--[if lt IE 9]>
-            <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
         <![endif]-->
-        <link href="style.css" rel="stylesheet">
     </head>
-    <body>
-        <div class="container-full">
-            <div class="row">
-                <div class="col-lg-12 text-center v-center">
-                    <h1>LibreDTE</h1>
-                    <p class="lead">¡Facturación electrónica libre para Chile!</p>
-                    <br/><br/><br/>
+    <body data-spy="scroll" data-offset="20" data-target="#navbar">
+        <!-- INICIO NAVBAR -->
+        <div class="logo-menu">
+            <nav class="navbar navbar-default navbar-fixed-top" role="navigation" data-spy="affix" data-offset-top="50">
+                <div class="container">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header col-md-3">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#inicio"><i class="fa fa-briefcase"></i> LibreDTE</a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="navbar">
+                        <ul class="nav navbar-nav col-md-9 pull-right">
+                            <li class="active" style="display:none"><a href="#inicio"><i class="fa fa-home"></i> Inicio</a></li>
+                            <li><a href="#servicios"><i class="fa fa-puzzle-piece"></i> Servicios</a></li>
+                            <li><a href="#integracion"><i class="fa fa-code"></i> Integración</a></li>
+                            <li><a href="#documentacion"><i class="fa fa-book"></i> Documentación</a></li>
+                            <li><a href="#multimedia"><i class="fa fa-picture-o"></i> Multimedia</a></li>
+                            <li><a href="#nosotros"><i class="fa fa-thumbs-up"></i> Nosotros</a></li>
+                            <li><a href="#contacto"><i class="fa fa-envelope"></i> Contacto</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!-- FIN NAVBAR -->
+        <!-- INICIO INICIO -->
+        <section id="inicio">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1 class="title">LibreDTE</h1>
+                        <h2 class="subtitle">¡Facturación electrónica libre para Chile!</h2>
+                        <img class="col-md-6 col-sm-6 col-xs-12 animated fadeInLeft" src="assets/img/inicio/computer.png" alt="" />
+                        <div class="col-md-6 col-sm-6 col-xs-12 animated fadeInRight delay-0-5">
+                            <p>
+                                Somos la primera solución de facturación electrónica libre para Chile. Con LibreDTE podrás administrar múltiples empresas desde una misma cuenta, autorizar a otros usuarios a trabajar con tu compañía e integrar fácilmente tu actual sistema computacional a nuestra API. ¡Tenemos servicios desde costo $0.-!
+                                <br/><br/>
+                                LibreDTE es un proyecto de <a href="https://sasco.cl">SASCO SpA</a>
+                            </p>
+                            <a href="https://github.com/LibreDTE" class="btn btn-common btn-lg">Código fuente</a>
+                            <a href="https://libredte.cl" class="btn btn-primary btn-lg">Aplicación web</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- FIN INICIO -->
+        <!-- INICIO SERVICIOS -->
+        <section id="servicios">
+            <div class="container">
+                <div class="row">
+                    <h1 class="title">Servicios</h1>
+                    <h2 class="subtitle">Facturación electrónica con la aplicación oficial en <a href="https://libredte.cl">libredte.cl</a></h2>
+                    <div class="table-responsive">
+                        <table class="table table-striped table-bordered table-hover">
+                            <thead>
+                                <tr>
+                                    <th style="width:12.5%"></th>
+                                    <th class="text-center" style="width:12.5%">DTE Básico</th>
+                                    <th class="text-center" style="width:12.5%">DTE Plus</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>Funcionalidades</th>
+                                    <td class="text-center">Reducidas</td>
+                                    <td class="text-center">Módulo DTE completo</td>
+                                </tr>
+                                <tr>
+                                    <th>Documentos</th>
+                                    <td class="text-center">Factura, nota de crédito y nota de débito</td>
+                                    <td class="text-center">Todos<sup>(1)</sup></td>
+                                </tr>
+                                <tr>
+                                    <th>Multiusuario</th>
+                                    <td class="text-center"><span class="fa fa-check"></span></td>
+                                    <td class="text-center"><span class="fa fa-check"></span></td>
+                                </tr>
+                                <tr>
+                                    <th>Multiempresa</th>
+                                    <td class="text-center"><span class="fa fa-check"></span></td>
+                                    <td class="text-center"><span class="fa fa-check"></span></td>
+                                </tr>
+                                <tr>
+                                    <th>Acceso servicios web</th>
+                                    <td class="text-center"><span class="fa fa-times"></span></td>
+                                    <td class="text-center"><span class="fa fa-check"></span></td>
+                                </tr>
+                                <tr>
+                                    <th>Conexión aplicación propia</th>
+                                    <td class="text-center"><span class="fa fa-times"></span></td>
+                                    <td class="text-center"><span class="fa fa-check"></span></td>
+                                </tr>
+                                <tr>
+                                    <th>Soporte personalizado</th>
+                                    <td class="text-center"><span class="fa fa-times"></span></td>
+                                    <td class="text-center"><span class="fa fa-check"></span></td>
+                                </tr>
+                                <tr>
+                                    <th>Dashboard</th>
+                                    <td class="text-center"><span class="fa fa-times"></span></td>
+                                    <td class="text-center"><span class="fa fa-check"></span></td>
+                                </tr>
+                                <tr>
+                                    <th>Mantenedor de productos y servicios</th>
+                                    <td class="text-center"><span class="fa fa-times"></span></td>
+                                    <td class="text-center"><span class="fa fa-check"></span></td>
+                                </tr>
+                                <tr>
+                                    <th>Módulo de cobranza</th>
+                                    <td class="text-center"><span class="fa fa-times"></span></td>
+                                    <td class="text-center"><span class="fa fa-check"></span></td>
+                                </tr>
+                                <tr>
+                                    <th>Propuesta formulario 29</th>
+                                    <td class="text-center"><span class="fa fa-times"></span></td>
+                                    <td class="text-center"><span class="fa fa-check"></span></td>
+                                </tr>
+                                <tr>
+                                    <th>Informes de compras y ventas</th>
+                                    <td class="text-center"><span class="fa fa-times"></span></td>
+                                    <td class="text-center"><span class="fa fa-check"></span></td>
+                                </tr>
+                                <tr>
+                                    <th>Notificaciones automáticas vía correo electrónico</th>
+                                    <td class="text-center"><span class="fa fa-times"></span></td>
+                                    <td class="text-center"><span class="fa fa-check"></span></td>
+                                </tr>
+                                <tr>
+                                    <th>Respaldos automáticos</th>
+                                    <td class="text-center"><span class="fa fa-times"></span></td>
+                                    <td class="text-center"><span class="fa fa-check"></span></td>
+                                </tr>
+                                <tr>
+                                    <th>Duración del servicio</th>
+                                    <td class="text-center">-</td>
+                                    <td class="text-center">Mensual</td>
+                                </tr>
+                                <tr>
+                                    <th>Costo</th>
+                                    <td class="text-center">¡$0.-!<sup>(2)</sup></td>
+                                    <td class="text-center">1 UF<sup>(3)</sup><br/><small>mensual</small></td>
+                                </tr>
+                                <tr>
+                                    <th>Más detalles</th>
+                                    <td class="text-center">
+                                        <a href="https://wiki.libredte.cl/doku.php/terminos">
+                                            Términos<br/><small>y condiciones</small>
+                                        </a>
+                                    </td>
+                                    <td class="text-center">
+                                        <a href="https://sasco.cl/archivos/servicios/facturacion/LibreDTE%20-%20Servicio%20Plus.pdf">
+                                            Descargar<br/><small>detalles</small>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th></th>
+                                    <td><a href="https://libredte.cl/usuarios/registrar" class="btn btn-default btn-lg btn-block" role="button">Registro<br/><small>gratuito</small></a></td>
+                                    <td><a href="https://libredte.cl/contacto/comercial" class="btn btn-default btn-lg btn-block" role="button">Actualizar<br/><small>cuenta</small></a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <ol style="font-size:0.85em">
+                        <li>
+                            Todos los documentos certificados por el SII con LibreDTE, actualmente estos son:
+                            <ul class="list-inline">
+                                <li>Factura electrónica (33)</li>
+                                <li>Factura exenta electrónica (34)</li>
+                                <li>Boleta electrónica (39)</li>
+                                <li>Boleta exenta electrónica (41)</li>
+                                <li>Factura de compra electrónica (46)</li>
+                                <li>Guía de despacho electrónica (52)</li>
+                                <li>Nota de débito electrónica (56)</li>
+                                <li>Nota de crédito electrónica (61)</li>
+                                <li>Factura de exportación electrónica (110)</li>
+                                <li>Nota de débito de exportación electrónica (111)</li>
+                                <li>Nota de crédito de exportación electrónica (112)</li>
+                            </ul>
+                        </li>
+                        <li>Servicios con costo $0.- son de libre uso y el soporte que disponen es la documentación existente y los foros de la comunidad de LibreDTE. En caso de requerir soporte de SASCO SpA este tendrá un costo asociado dependiendo del tipo de soporte y la duración del mismo.</li>
+                        <li>Costo neto "desde", y al contado, por contribuyente y usuario Plus.</li>
+                    </ol>
+                    <div class="jumbotron" id="certificacion">
+                        <h1>¿Necesitas certificar una empresa?</h1>
+                        <p>Realizamos el proceso de certificación del set básico<sup>(1)</sup> por 4 UF<sup>(2)</sup></p>
+                        <p style="font-size:0.9em">Si deseas utilizar facturación electrónica, ya sea con LibreDTE u otro proveedor. Pero no sabes cómo hacer el proceso de certificación ante el SII. Nosotros podemos realizarlo por ti. El costo de certificar el set básico<sup>1</sup> es de 4 UF<sup>(2)</sup>. Si necesitas certificar otros sets <a href="https://libredte.cl/contacto/comercial">consúltanos</a>. Revisa los <a href="https://wiki.libredte.cl/doku.php/faq/libredte/servicios/certificacion">aquí los requisitos para hacer la certificación</a>.</p>
+                        <div class="row">
+                            <div class="col-md-7">
+                                <ol style="font-size:0.8em">
+                                    <li>
+                                        Set básico corresponde a:
+                                        <ul class="list-inline">
+                                            <li>Factura electrónica (33)</li>
+                                            <li>Nota de débito electrónica (56)</li>
+                                            <li>Nota de crédito electrónica (61)</li>
+                                        </ul>
+                                    </li>
+                                    <li>Costo en valor neto y al contado. Costos adicionales por otros tipos de DTE a certificar.</li>
+                                </ol>
+                            </div>
+                            <div class="col-md-5 text-right">
+                                <p><a class="btn btn-primary btn-lg" href="https://libredte.cl/contacto/comercial" role="button">¡Contáctanos!</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- FIN SERVICIOS -->
+        <!-- INICIO INTEGRACIÓN -->
+        <section id="integracion">
+            <div class="container text-center">
+                <div class="row">
+                    <h1 class="title">Integración</h1>
+                    <h2 class="subtitle">Elige la opción para conectar tu software a LibreDTE</h2>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                        <div class="service-item">
+                            <i class="fa fa-code" style="font-size:10em"></i>
+                            <h3>Directo con PHP</h3>
+                            <p>Si la aplicación está escrita en PHP, y está publicado su código fuente, es posible utilizar la biblioteca de LibreDTE, se debe incluir usando composer y se podrá empezar a facturar.</p>
+                            <p><code>composer require sasco/libredte</code></p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                        <div class="service-item">
+                            <i class="fa fa-cloud" style="font-size:10em"></i>
+                            <h3>Servicios web</h3>
+                            <p>Se provee de una API para interactuar con la aplicación web de LibreDTE. Tiene la ventaja de no requerir instalar la aplicación ni biblioteca.</p>
+                            <p><a href="https://doc.libredte.cl/api">Documentación de la API</a> y <a href="https://github.com/LibreDTE/?query=sdk">SDKs para conectar a la API</a></p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                        <div class="service-item">
+                            <i class="fa fa-terminal" style="font-size:10em"></i>
+                            <h3>Usando el cliente</h3>
+                            <p>Este cliente permitirá consumir de manera sencilla los servicios web de LibreDTE. Podrás hacer esto a través de llamadas a "system" o similar, como si fuese cualquier programa de línea de comandos.</p>
+                            <p><a href="https://github.com/LibreDTE/libredte-cliente">Descargar el cliente</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- FIN INTEGRACIÓN -->
+        <!-- INICIO DOCUMENTACIÓN -->
+        <section id="documentacion">
+            <div class="container text-center">
+                <div class="row">
+                    <h1 class="title">Documentación</h1>
+                    <h2 class="subtitle">Accede a la documentación y soporte de la comunidad</h2>
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                        <div class="service-item">
+                            <i class="fa fa-code" style="font-size:10em"></i>
+                            <h3>Biblioteca</h3>
+                            <p>Documentación del núcleo de LibreDTE, nuestra biblioteca en PHP</p>
+                            <p><a href="https://doc.libredte.cl/lib/annotated.html">Ver documentación</a></p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                        <div class="service-item">
+                            <i class="fa fa-cloud" style="font-size:10em"></i>
+                            <h3>Servicios web</h3>
+                            <p>Documentación de la API de servicios web para integración</p>
+                            <p><a href="https://doc.libredte.cl/api">Ver documentación</a></p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                        <div class="service-item">
+                            <i class="fa fa-book" style="font-size:10em"></i>
+                            <h3>Wiki</h3>
+                            <p>Documentación oficial de los proyectos que conforman LibreDTE</p>
+                            <p><a href="https://wiki.libredte.cl">Ir al wiki oficial</a></p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                        <div class="service-item">
+                            <i class="fa fa-envelope-o" style="font-size:10em"></i>
+                            <h3>Lista de correo</h3>
+                            <p>Se una parte activa de la comunidad a través de nuestra lista de correos.</p>
+                            <p><a href="https://groups.google.com/forum/#!forum/libredte">Ir a la lista de correo</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- FIN DOCUMENTACIÓN -->
+        <!-- INICIO MULTIMEDIA -->
+        <section id="multimedia">
+            <div class="container">
+                <div class="row">
+                    <h1 class="title">Conoce nuestra aplicación web</h1>
+                    <h2 class="subtitle">Capturas de pantalla y video tutoriales</h2>
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                        <div class="portfolio-item wow fadeInLeft" data-wow-delay=".5s">
+                            <a href="#"><img src="assets/img/capturas/1.png" alt=""></a>
+                            <div class="overlay">
+                                <div class="icons">
+                                    <a data-lightbox="image1" href="assets/img/capturas/1.png" class="preview"><i class="fa fa-search-plus fa-4x"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                        <div class="portfolio-item wow fadeInLeft" data-wow-delay=".5s">
+                            <a href="#"><img src="assets/img/capturas/2.png" alt=""></a>
+                            <div class="overlay">
+                                <div class="icons">
+                                    <a data-lightbox="image1" href="assets/img/capturas/2.png" class="preview"><i class="fa fa-search-plus fa-4x"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                        <div class="portfolio-item wow fadeInLeft" data-wow-delay=".5s">
+                            <a href="#"><img src="assets/img/capturas/3.png" alt=""></a>
+                            <div class="overlay">
+                                <div class="icons">
+                                    <a data-lightbox="image1" href="assets/img/capturas/3.png" class="preview"><i class="fa fa-search-plus fa-4x"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                        <div class="portfolio-item wow fadeInLeft" data-wow-delay=".5s">
+                            <a href="#"><img src="assets/img/capturas/4.png" alt=""></a>
+                            <div class="overlay">
+                                <div class="icons">
+                                    <a data-lightbox="image1" href="assets/img/capturas/4.png" class="preview"><i class="fa fa-search-plus fa-4x"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                        <div class="portfolio-item wow fadeInLeft" data-wow-delay=".5s">
+                            <a href="#"><img src="assets/img/capturas/5.png" alt=""></a>
+                            <div class="overlay">
+                                <div class="icons">
+                                    <a data-lightbox="image1" href="assets/img/capturas/5.png" class="preview"><i class="fa fa-search-plus fa-4x"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                        <div class="portfolio-item wow fadeInLeft" data-wow-delay=".5s">
+                            <a href="#"><img src="assets/img/capturas/6.png" alt=""></a>
+                            <div class="overlay">
+                                <div class="icons">
+                                    <a data-lightbox="image1" href="assets/img/capturas/6.png" class="preview"><i class="fa fa-search-plus fa-4x"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4 col-sm-6">
+                            <div class="center video-container">
+                                <iframe width="420" height="315" src="https://www.youtube.com/embed/u8MmH-16hKI" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="center video-container">
+                                <iframe width="420" height="315" src="https://www.youtube.com/embed/oFOcFV7Pung" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="center video-container">
+                                <iframe width="420" height="315" src="https://www.youtube.com/embed/RkfUvZHSpoE" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="center video-container">
+                                <iframe width="420" height="315" src="https://www.youtube.com/embed/biMrTHDjaMo" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="center video-container">
+                                <iframe width="420" height="315" src="https://www.youtube.com/embed/RXDHbYo8acA" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="center video-container">
+                                <iframe width="420" height="315" src="https://www.youtube.com/embed/M0gaaGS6hAk" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Encuentras todos los video tutoriales <a href="https://wiki.libredte.cl/doku.php/webapp#video_tutoriales">aquí</a></p>
+                </div>
+            </div>
+        </section>
+        <!-- FIN MULTIMEDIA -->
+        <!-- INICIO COMENTARIOS -->
+        <section id="comentarios">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-md-5">
+                        <a class="twitter-timeline"  href="https://twitter.com/LibreDTE" data-widget-id="643568969484488704">Tweets de @LibreDTE.</a>
+                        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+                    </div>
+                    <div class="col-xs-12 col-md-7">
+                        <div class="row" style="padding:3em 0">
+                            <div id="feedback" class="carousel slide" data-ride="carousel">
+                                <div class="carousel-inner" role="listbox" id="feedback-list"></div>
+                            </div>
+                        </div>
+                        <!--<div class="row" style="padding:0">
+                            <div class="col-md-12 text-center">
+                                <a href="#feedback" role="button" data-slide="prev" style="margin-right:10em" title="Comentario anterior">
+                                    <span class="fa fa-arrow-left text-muted"></span>
+                                </a>
+                                <a href="#feedback" role="button" data-slide="next" title="Comentario siguiente">
+                                    <span class="fa fa-arrow-right text-muted"></span>
+                                </a>
+                            </div>
+                        </div>-->
+<script>
+$(function() {
+var c = '<div class="item{active} text-center text-muted"><div class="row" style="padding:0"><div class="col-xs-2"><span class="fa fa-quote-left fa-2x"></span></div><div class="col-xs-8">{comentario}</div><div class="col-xs-2"><span class="fa fa-quote-right fa-2x"></span></div></div><br/><br/>{nombre}{empresa} el {fecha}</div>';
+var buffer = '';
+for (var i=0; i<feedback.length; i++) {
+    if (feedback[i][5]) {
+        buffer +=  c.replace('{active}', active = i==0 ? ' active' : '')
+                    .replace('{comentario}', feedback[i][6])
+                    .replace('{nombre}', feedback[i][1])
+                    .replace('{empresa}', feedback[i][3]?' de '+feedback[i][3]:'')
+                    .replace('{fecha}', feedback[i][0]);
+    }
+}
+document.getElementById('feedback-list').innerHTML = buffer;
+});
+</script>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- FIN COMENTARIOS -->
+        <!-- INICIO NOSOTROS -->
+        <section id="nosotros">
+            <div class="container">
+                <div class="row">
+                    <h1 class="title">Sobre nosotros</h1>
+                    <h2 class="subtitle">Soporte oficial por SASCO SpA</h2>
+                    <div class="col-md-8 col-sm-12">
+                        <p><a href="https://sasco.cl">SASCO SpA</a> es la empresa que está detrás del proyecto LibreDTE, somos una empresa pequeña, formada por profesionales con ganas de ser un aporte para la sociedad. Creemos fuertemente en el software libre y luchamos porque sean respetados los <a href="https://wiki.libredte.cl/doku.php/terminos">términos y condiciones</a> de nuestra solución. Somos los desarrolladores originales y dueños del software.</p>
+                        <p>Diseñamos y mejoramos nuestra solución de acuerdo a la experiencia en desarrollo de aplicaciones y facturación electrónica. Somos la empresa que provee el soporte oficial a LibreDTE. Somos expertos en LibreDTE.</p>
+                    </div>
+                    <div class="col-md-4 col-sm-12 col-xs-12">
+                        <img class="img-responsive" src="assets/img/nosotros/staff.png" alt="" />
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- FIN NOSOTROS -->
+        <!-- INICIO CONTACTO -->
+        <section id="contacto">
+            <div class="container text-center">
+                <div class="row">
+                    <h1 class="title">Contáctanos</h1>
+                    <h2 class="subtitle">¡Síguenos en nuestras redes sociales!</h2>
+                    <form role="form" class="contact-form" method="post" action="https://libredte.cl/contacto/basico">
+                        <div class="col-md-6 wow fadeInLeft" data-wow-delay=".5s">
+                            <div class="form-group">
+                                <div class="controls">
+                                    <input type="text" class="form-control" placeholder="Nombre" name="nombre">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="controls">
+                                    <input type="email" class="form-control email" placeholder="Correo electrónico" name="correo">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="controls">
+                                    <textarea rows="7" class="form-control" placeholder="Mensaje" name="mensaje"></textarea>
+                                </div>
+                            </div>
+                            <button type="submit" name="submit" id="submit" class="btn btn-lg btn-common">Enviar mensaje</button><div id="success" style="color:#34495e;"></div>
+                        </div>
+                    </form>
+                    <div class="col-md-6 wow fadeInRight">
+                        <div class="social-links">
+                            <a href="https://twitter.com/LibreDTE" title="Síguenos en Twitter" class="social">
+                                <i class="fa fa-twitter fa-2x"></i>
+                            </a>
+                            <a href="https://www.facebook.com/LibreDTE" title="Síguenos en Facebook" class="social">
+                                <i class="fa fa-facebook fa-2x"></i>
+                            </a>
+                            <a href="https://plus.google.com/+LibredteCl" title="Síguenos en Google+" class="social">
+                                <i class="fa fa-google-plus fa-2x"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/grp/home?gid=8403251" title="Síguenos en Linkedin" class="social">
+                                <i class="fa fa-linkedin fa-2x"></i>
+                            </a>
+                            <a href="https://www.youtube.com/c/LibredteCl" title="Síguenos en Youtube" class="social">
+                                <i class="fa fa-youtube fa-2x"></i>
+                            </a>
+                            <a href="https://github.com/LibreDTE" title="Código fuente en GitHub" class="social">
+                                <i class="fa fa-github fa-2x"></i>
+                            </a>
+                        </div>
+                        <div class="contact-info">
+                            <p><i class="fa fa-map-marker"></i> Santiago / Santa Cruz, Chile</p>
+                            <p>
+                                <i class="fa fa-envelope"></i>
+                                <script language="javascript">
+                                    var username = "libredte";
+                                    var hostname = "sasco.cl";
+                                    document.write("<a href='" + "mail" + "to:" + username + "@" + hostname + "'>" + username + "@" + hostname + "</a>");
+                                </script>
+                            </p>
+                            <p><i class="fa fa-phone"></i> +56 2 32102297 / +56 2 32102298</p>
+                        </div>
+                        <p>Para una atención rápida y personalizada utiliza nuestro <a href="https://libredte.cl/contacto/comercial">formulario comercial</a> o de <a href="https://libredte.cl/contacto/tecnico">soporte técnico</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- FIN CONTACTO -->
+        <!-- INICIO FOOTER -->
+        <div id="copyright">
+            <div class="container">
+                <div class="col-md-10">
                     <p>
-                        <a href="https://libredte.cl" class="btn btn-success btn-lg" data-toggle="tooltip" data-placement="bottom" title="Ir a la aplicación web de LibreDTE">
-                            Aplicación <i class="icon icon-angle-right"></i>
-                        </a>
-                        <a href="https://github.com/LibreDTE" class="btn btn-primary btn-lg" data-toggle="tooltip" data-placement="bottom" title="Descargar el código fuente de LibreDTE en Github">
-                            Código <i class="icon icon-angle-right"></i>
-                        </a>
-                        <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=E4XE2VRHVBH48" class="btn btn-warning btn-lg" data-toggle="tooltip" data-placement="bottom" title="Realizar una donación en dinero al proyecto">
-                            Donar <i class="icon icon-angle-right"></i>
-                        </a>
+                        &copy; LibreDTE es un proyecto de <a href="https://sasco.cl">SASCO SpA</a><br/>
+                        <small><a href="https://wiki.libredte.cl/doku.php/terminos">Términos, condiciones y licencia de uso</a> de los proyectos de LibreDTE</small><br/>
+                        <small><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=E4XE2VRHVBH48">Realizar una donación al proyecto</a></small>
                     </p>
                 </div>
-            </div> <!-- /row -->
-            <div class="row">
-                <div class="col-lg-12 text-center v-center" style="font-size:39pt;">
-                    <a href="https://twitter.com/LibreDTE" title="Síguenos en Twitter"><i class="icon-twitter"></i></a>
-                    <a href="https://www.facebook.com/LibreDTE" title="Síguenos en Facebook"><i class="icon-facebook"></i></a>
-                    <a href="https://plus.google.com/+LibredteCl" title="Síguenos en Google+"><i class="icon-google-plus"></i></a>
-                    <a href="https://www.linkedin.com/grp/home?gid=8403251" title="Síguenos en Linkedin"><i class="icon-linkedin"></i></a>
-                    <a href="https://www.youtube.com/c/LibredteCl" title="Síguenos en Youtube"><i class="icon-youtube"></i></a>
-                    <a href="https://github.com/LibreDTE" title="Código fuente en GitHub"><i class="icon-github"></i></a>
-                </div>
-            </div>
-            <br><br><br><br><br>
-        </div> <!-- /container full -->
-        <div class="container">
-            <hr/>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="panel panel-default">
-                        <div class="panel-heading"><h3>Comunidad</h3></div>
-                        <div class="panel-body">
-                            <p>Resuelve tus dudas o consultas de manera gratuita a través de la lista de correo de la comunidad de LibreDTE.</p>
-                            <a href="https://groups.google.com/forum/#!forum/libredte" class="btn btn-default btn-lg">Ir al grupo de Google <i class="icon icon-angle-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="panel panel-default">
-                        <div class="panel-heading"><h3>Wiki</h3></div>
-                        <div class="panel-body">
-                            <p>En el wiki de LibreDTE podrás encontrar la documentación básica de los procesos del SII y del software de facturación.</p>
-                            <a href="https://wiki.libredte.cl" class="btn btn-default btn-lg">Explorar documentación <i class="icon icon-angle-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="panel panel-default">
-                        <div class="panel-heading"><h3>Soporte oficial</h3></div>
-                        <div class="panel-body">
-                            <p>LibreDTE es un proyecto de SASCO SpA y somos los proveedores oficiales de soporte y asesorías en facturación.</p>
-                            <a href="https://sasco.cl/servicios/facturacion" class="btn btn-default btn-lg">Ver planes y servicios <i class="icon icon-angle-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <br/><br/>
-                    <p class="pull-left">
-                        &copy; 2016 LibreDTE<br/>
-                        <span style="font-size:0.85em">Un proyecto de <a href="https://sasco.cl">SASCO SpA</a>
-                    </p>
-                    <p class="pull-right text-right">
-                        <a href="http://libredte.cl/contacto">Contáctenos</a> / +56 9 57837322<br/>
-                        <span style="font-size:0.85em"><a href="http://www.bootply.com">Template from Bootply</a><span>
-                    </p>
-                    <br/><br/>
+                <div class="col-md-2">
+                    <small>Corporal es un diseño de <a href="http://graygrids.com">GrayGrids</a></small>
+                    <span class="to-top pull-right"><a href="#inicio"><i class="fa fa-angle-up fa-2x"></i></a></span>
                 </div>
             </div>
         </div>
-        <!-- script references -->
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
-        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-        <script>$(function () { $('[data-toggle="tooltip"]').tooltip(); });</script>
+        <!-- FIN FOOTER -->
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/smooth-scroll.js"></script>
+        <script src="assets/js/lightbox.min.js"></script>
+        <script src="assets/js/feedback.js"></script>
     </body>
 </html>
