@@ -198,6 +198,10 @@ a:hover {
 #contacto .social .social-links a:hover {
   color: #fff;
 }
+#contacto .social .fa-wordpress:hover {
+    background: #23282d;
+    color: #fff;
+}
 #contacto .social .fa-facebook:hover {
   background: #3b5998;
   color: #fff;
