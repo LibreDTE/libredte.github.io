@@ -109,6 +109,10 @@ paths:
           required: true
           schema:
             $ref: '#/definitions/DteTmp_ID'
+        - name: getXML
+          in: query
+          description: Indica si se solicita o no el XML generado
+          type: boolean
       tags:
         - Documentos
         - Crear DTE
