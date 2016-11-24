@@ -527,7 +527,7 @@ paths:
         502:
           description: Ocurrió algún problema al enviar el DTE al SII
   /dte/dte_emitidos/enviar_email/{dte}/{folio}/{emisor}:
-    get:
+    post:
       summary: Permite enviar el DTE por correo electrónico
       description: Recurso que permite enviar el DTE por correo electrónico, se envía siempre el XML y opcionalmente se puede enviar el PDF.
       security:
