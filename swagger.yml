@@ -1001,17 +1001,17 @@ paths:
           description: No está autorizado a operar con la empresa solicitada
         404:
           description: Empresa o mantenedor de folios solicitado no existe
-  /pagos/pagos/info/{codigo}/{emisor}:
+  /pagos/cobros/info/{codigo}/{emisor}:
     get:
-      summary: Datos de un pago (cursado o pendiente de cursar)
-      description: Recurso que permite obtener los datos de un pago emitido por un contribuyente. Ya sea uno asociado a un documento temporal o a uno real.
+      summary: Datos de un cobro (pagado o pendiente de pagar)
+      description: Recurso que permite obtener los datos de un cobro emitido por un contribuyente. Ya sea uno asociado a un documento temporal o a uno real.
       security:
         - ApiKey: []
         - Basic: []
       parameters:
         - name: codigo
           in: path
-          description: Código del pago
+          description: Código del cobro
           required: true
           type: string
         - name: emisor
@@ -1023,15 +1023,15 @@ paths:
         - Pagos
       responses:
         200:
-          description: Datos del pago
+          description: Datos del cobro
           schema:
-            $ref: '#/definitions/Pago'
+            $ref: '#/definitions/Cobro'
         401:
           description: Usuario no autenticado o credenciales incorrectas
         403:
           description: No está autorizado a operar con la empresa solicitada
         404:
-          description: Emisor no está registrado o no tiene el pago solicitado
+          description: Emisor no está registrado o no tiene el cobro solicitado
 definitions:
   Dte:
     type: object
@@ -1524,19 +1524,42 @@ definitions:
         type: boolean
         description: Si =true que se enviará una cotización en vez de la previsualización
         default: true
-  Pago:
+  Cobro:
     type: object
     properties:
       emisor:
         type: integer
-        description: RUT del emisor del pago sin DV
+        description: RUT del emisor del cobro (sin DV)
       codigo:
         type: string
         description: Asunto del correo
+      receptor:
+        type: integer
+        description: RUT del receptor del cobro (sin DV)
       fecha:
         type: string
         format: date
-        description: Fecha en que el pago fue generado por primera vez
+        description: Fecha en que el cobro fue generado
+      vencimiento:
+        type: string
+        format: date
+        description: Fecha de vencimiento del cobro
+      total:
+        type: integer
+        description: Monto total del cobro
+      dte:
+        type: integer
+        description: Tipo de documento asociado al cobro
+      temporal:
+        type: string
+        description: Código del DTE temporal asociado al cobro
+      emitido:
+        type: integer
+        description: Folio del DTE real emitido
       pagado:
-        type: boolean
-        description: Indica si el pago está o no cursado
+        type: string
+        format: date
+        description: Fecha en que se realizó el pago
+      medio:
+        type: string
+        description: Medio usado para realizar el pago
