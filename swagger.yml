@@ -823,27 +823,38 @@ paths:
         - name: fecha_desde
           in: query
           description: Fecha desde cuando buscar documentos
+          type: string
+          format: date
         - name: fecha_hasta
           in: query
           description: Fecha hasta cuando buscar documentos
+          type: string
+          format: date
         - name: fecha
           in: query
           description: Buscar documentos en sólo un día
+          type: string
+          format: date
         - name: emisor
           in: query
           description: RUT del emisor del documento (sin DV)
+          type: integer
         - name: dte
           in: query
           description: Código del documento que se está buscando
+          type: integer
         - name: total_desde
           in: query
           description: Para buscar en un rango de monto total
+          type: integer
         - name: total_hasta
           in: query
           description: Para buscar en un rango de monto total
+          type: integer
         - name: total
           in: query
           description: Para buscar un monto total exacto
+          type: integer
       tags:
         - DteRecibidos
       responses:
