@@ -807,6 +807,54 @@ paths:
           description: No está autorizado a operar con la empresa solicitada
         404:
           description: Receptor no está registrado o no tiene el DTE recibido solicitado
+  /dte/dte_recibidos/buscar/{receptor}:
+    get:
+      summary: Buscar documentos recibidos
+      description: Recurso que permite realizar una búsqueda sobre los documentos recibidos usando algunos filtros. Es obligatorio buscar en ciertas fechas, no es posible obtener todos los documentos sin indicar rango de fechas. Si no se indican fechas para filtrar por defecto se buscan los documentos recibidos del período actual.
+      security:
+        - ApiKey: []
+        - Basic: []
+      parameters:
+        - name: receptor
+          in: path
+          description: RUT del receptor del documento (sin DV)
+          required: true
+          type: integer
+        - name: fecha_desde
+          in: query
+          description: Fecha desde cuando buscar documentos
+        - name: fecha_hasta
+          in: query
+          description: Fecha hasta cuando buscar documentos
+        - name: fecha
+          in: query
+          description: Buscar documentos en sólo un día
+        - name: emisor
+          in: query
+          description: RUT del emisor del documento (sin DV)
+        - name: dte
+          in: query
+          description: Código del documento que se está buscando
+        - name: total_desde
+          in: query
+          description: Para buscar en un rango de monto total
+        - name: total_hasta
+          in: query
+          description: Para buscar en un rango de monto total
+        - name: total
+          in: query
+          description: Para buscar un monto total exacto
+      tags:
+        - DteRecibidos
+      responses:
+        200:
+          description: Documentos recibidos si se encontraron
+        401:
+          description: Usuario no autenticado o credenciales incorrectas
+        403:
+          description: No está autorizado a operar con la empresa solicitada
+        404:
+          description: Receptor no está registrado o no tiene documentos para los filtros usados
   /dte/documentos/generar_xml:
     post:
       summary: Generar XML de DTE
