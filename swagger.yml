@@ -137,7 +137,7 @@ paths:
           description: No hay folio para el DTE
         510:
           description: No fue posible generar el sobre EnvioDTE
-  /dte/documentos/generar_pdf:
+  /utilidades/documentos/generar_pdf:
     post:
       summary: Generar PDF a partir de XML
       description: |
@@ -179,7 +179,7 @@ paths:
           description: No se pudieron obtener los datos de un DTE
         507:
           description: No fue posible crear directorio temporal pata DTEs
-  /dte/documentos/consultar:
+  /dte/dte_emitidos/consultar:
     post:
       summary: Consultar por un DTE emitido
       description: Recurso que permite consultar la existencia de un DTE emitido en LibreDTE.
@@ -194,7 +194,7 @@ paths:
           schema:
             $ref: '#/definitions/Dte'
       tags:
-        - Documentos
+        - DteEmitidos
       responses:
         200:
           description: Objeto con el DTE emitido
@@ -866,7 +866,7 @@ paths:
           description: No está autorizado a operar con la empresa solicitada
         404:
           description: Receptor no está registrado o no tiene documentos para los filtros usados
-  /dte/documentos/generar_xml:
+  /utilidades/documentos/generar_xml:
     post:
       summary: Generar XML de DTE
       description: Recurso que permite generar el XML de un DTE enviando todo lo necesario para hacerlo sin que el contribuyente esté registrado en LibreDTE.
@@ -903,7 +903,7 @@ paths:
           description: Problema al crear directorio temporal
         508:
           description: Falta el CAF de un DTE o no fue posible timbrar
-  /dte/documentos/verificar_ted:
+  /utilidades/documentos/verificar_ted:
     post:
       summary: Verificar TED
       description: Recurso que permite verificar el TED de un documento tributario electrónico cualquiera.
@@ -928,7 +928,7 @@ paths:
           description: Usuario no autenticado o credenciales incorrectas
         500:
           description: Problema al validar el TED
-  /dte/documentos/get_ted:
+  /utilidades/documentos/get_ted:
     post:
       summary: Obtener XML de TED desde imagen
       description: Recurso que permite obtener el XML del TED a partir de una imagen en formato PBM.
