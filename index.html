@@ -138,6 +138,11 @@
                                     <td class="text-center"><span class="fa fa-check"></span></td>
                                 </tr>
                                 <tr>
+                                    <th>Acceso webhooks para software de terceros</th>
+                                    <td class="text-center"><span class="fa fa-times"></span></td>
+                                    <td class="text-center"><span class="fa fa-check"></span></td>
+                                </tr>
+                                <tr>
                                     <th>Conexión aplicación propia</th>
                                     <td class="text-center"><span class="fa fa-times"></span></td>
                                     <td class="text-center"><span class="fa fa-check"></span></td>
@@ -311,15 +316,15 @@
                 <div class="row">
                     <h1 class="title">Integración</h1>
                     <h2 class="subtitle">Elige la opción para conectar tu software a LibreDTE</h2>
-                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <div class="col-sm-3 col-xs-12">
                         <div class="service-item">
-                            <i class="fa fa-code" style="font-size:10em"></i>
-                            <h3>Directo con PHP</h3>
-                            <p>Si la aplicación está escrita en PHP y está publicado su código fuente bajo licencia AGPL, es posible utilizar la biblioteca de LibreDTE, se debe incluir usando composer y se podrá empezar a facturar.</p>
-                            <p><code>composer require sasco/libredte</code></p>
+                            <i class="fa fa-exchange" style="font-size:10em"></i>
+                            <h3>Webhooks</h3>
+                            <p>La manera más simple de integrar, ya tenemos todo listo. Sólo debes configurar tu aplicación para que use nuestros webhooks.</p>
+                            <p>¡Solicita gratis un nuevo webhook para la aplicación que uses!</p>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <div class="col-sm-3 col-xs-12">
                         <div class="service-item">
                             <i class="fa fa-cloud" style="font-size:10em"></i>
                             <h3>Servicios web</h3>
@@ -327,13 +332,53 @@
                             <p><a href="https://doc.libredte.cl/api">Documentación de la API</a> y <a href="https://github.com/LibreDTE/?query=sdk">SDKs para conectar a la API</a></p>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <div class="col-sm-3 col-xs-12">
                         <div class="service-item">
                             <i class="fa fa-terminal" style="font-size:10em"></i>
                             <h3>Usando el cliente</h3>
                             <p>Este cliente permitirá consumir de manera sencilla los servicios web de LibreDTE. Podrás hacer esto a través de llamadas a "system" o similar, como si fuese cualquier programa de línea de comandos.</p>
                             <p><a href="https://github.com/LibreDTE/libredte-cliente">Descargar el cliente</a></p>
                         </div>
+                    </div>
+                    <div class="col-sm-3 col-xs-12">
+                        <div class="service-item">
+                            <i class="fa fa-code" style="font-size:10em"></i>
+                            <h3>Directo con PHP</h3>
+                            <p>Si la aplicación está escrita en PHP y está publicado su código fuente bajo licencia AGPL, es posible utilizar la biblioteca de LibreDTE, se debe incluir usando composer y se podrá empezar a facturar.</p>
+                            <p><code>composer require sasco/libredte</code></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4 col-xs-12">
+                        <a href="https://alegra.com" title="Software facturación, contabilidad e inventario">
+                            <img src="assets/img/integracion/alegra.jpg" alt="Alegra" class="img-responsive thumbnail" />
+                        </a>
+                    </div>
+                    <div class="col-sm-4 col-xs-12">
+                        <a href="https://jumpseller.com" title="Tienda electrónica">
+                            <img src="assets/img/integracion/jumpseller.png" alt="Jumpseller" class="img-responsive thumbnail" />
+                        </a>
+                    </div>
+                    <div class="col-sm-4 col-xs-12">
+                        <a href="https://www.frontdeskmaster.com" title="Software hotelero">
+                            <img src="assets/img/integracion/frontdesk_master.jpg" alt="Frontdesk Master" class="img-responsive thumbnail" />
+                        </a>
+                    </div>
+                    <div class="col-sm-4 col-xs-12">
+                        <a href="https://blancomartin.cl/blog/novedades-odoo-1/post/integracion-de-odoo-v8-y-libredte-17" title="Software ERP">
+                            <img src="assets/img/integracion/odoo.png" alt="Odoo" class="img-responsive thumbnail" />
+                        </a>
+                    </div>
+                    <div class="col-sm-4 col-xs-12">
+                        <a href="https://khipu.com" title="Medio de pago mediante transferencias">
+                            <img src="assets/img/integracion/khipu.jpg" alt="Khipu" class="img-responsive thumbnail" />
+                        </a>
+                    </div>
+                    <div class="col-sm-4 col-xs-12">
+                        <a href="https://www.transbank.cl" title="Medio de pago mediante tarjetas">
+                            <img src="assets/img/integracion/webpay.jpg" alt="Webpay" class="img-responsive thumbnail" />
+                        </a>
                     </div>
                 </div>
             </div>
@@ -345,14 +390,6 @@
                 <div class="row">
                     <h1 class="title">Documentación</h1>
                     <h2 class="subtitle">Accede a la documentación y soporte de la comunidad</h2>
-                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-                        <div class="service-item">
-                            <i class="fa fa-code" style="font-size:10em"></i>
-                            <h3>Biblioteca</h3>
-                            <p>Documentación del núcleo de LibreDTE, nuestra biblioteca en PHP</p>
-                            <p><a href="https://doc.libredte.cl/lib/annotated.html">Ver documentación</a></p>
-                        </div>
-                    </div>
                     <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
                         <div class="service-item">
                             <i class="fa fa-cloud" style="font-size:10em"></i>
@@ -375,6 +412,14 @@
                             <h3>Lista de correo</h3>
                             <p>Se una parte activa de la comunidad a través de nuestra lista de correos.</p>
                             <p><a href="https://groups.google.com/forum/#!forum/libredte">Ir a la lista de correo</a></p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                        <div class="service-item">
+                            <i class="fa fa-code" style="font-size:10em"></i>
+                            <h3>Biblioteca</h3>
+                            <p>Documentación del núcleo de LibreDTE, nuestra biblioteca en PHP</p>
+                            <p><a href="https://doc.libredte.cl/lib/annotated.html">Ver documentación</a></p>
                         </div>
                     </div>
                 </div>
