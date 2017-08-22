@@ -792,6 +792,14 @@ paths:
           description: RUT del receptor del DTE (sin DV)
           required: true
           type: integer
+        - name: getXML
+          in: query
+          description: =1 bajará XML (=0 por defecto)
+          type: number
+        - name: getDetalle
+          in: query
+          description: =1 bajará detalle del DTE (=0 por defecto)
+          type: number
       tags:
         - DteRecibidos
       responses:
